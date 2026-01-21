@@ -6,10 +6,16 @@
 }
 
 body {
-    background: #FFFFFF;
-    color: #0A2E5C;
-    line-height: 1.6;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(
+        180deg,
+        #003A8F 0%,
+        #a49d9d 40%,
+        #FFFFFF 100%
+    );
 }
+
 
 .hero {
     text-align: center;
@@ -32,16 +38,15 @@ body {
 
 /* FOTO PERFIL */
 .profile {
-  width: 260px;              /* MÁS GRANDE */
-  height: 340px;             /* FORMATO RETRATO */
-  border-radius: 20px;       /* Ya no circular */
-  object-fit: contain;       /* NO recorta la foto */
-  background: #ffffff;
-  padding: 10px;
-  margin: 40px auto 30px;
-  display: block;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+width: 260px;
+height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
 }
+
 
 
 
