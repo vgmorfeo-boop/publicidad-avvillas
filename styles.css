@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFFFF;
+    color: #0A2E5C;
+    line-height: 1.6;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #F2F4F7, #FFFFFF);
+}
+
+/* LOGOS SUPERIORES */
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logos img {
+  height: 85px;   /* tamaño profesional */
+  max-width: 240px;
+}
+
+/* FOTO PERFIL */
+.profile {
+  width: 260px;              /* MÁS GRANDE */
+  height: 340px;             /* FORMATO RETRATO */
+  border-radius: 20px;       /* Ya no circular */
+  object-fit: contain;       /* NO recorta la foto */
+  background: #ffffff;
+  padding: 10px;
+  margin: 40px auto 30px;
+  display: block;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #5F6368;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #1FA971;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background: #0A2E5C;
+    color: #FFFFFF;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.security {
+    background: #F2F4F7;
+}
+
+.security ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.security li {
+    margin-bottom: 10px;
+}
+
+.process ol {
+    margin-top: 20px;
+}
+
+.qr img {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #0A2E5C;
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+  .profile {
+    width: 200px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
